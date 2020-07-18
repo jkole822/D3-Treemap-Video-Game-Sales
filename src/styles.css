@@ -1,0 +1,35 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.main {
+	display: flex;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px 1px black;
+}
+
+#title {
+	font-size: 1.6em;
+	margin: 5px 0;
+}
+
+#description {
+	font-size: 1.1em;
+	margin: 5px 0;
+}
+
+.tooltip {
+	position: absolute;
+	padding: 10px;
+	box-shadow: 1px 1px 10px rgba(94, 93, 93, 0.6);
+	color: white;
+	border-radius: 5px;
+	font-size: 0.7em;
+	pointer-events: none;
+}
