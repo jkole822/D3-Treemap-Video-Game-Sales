@@ -47,10 +47,6 @@ const renderData = async () => {
 		return `Name: ${name} <br /> Category: ${category} <br /> Value: ${value}`;
 	};
 
-	// SVG
-	const w = 960;
-	const h = 600;
-
 	// Main Container
 	d3.select('body').append('div').attr('class', 'main');
 
@@ -64,6 +60,10 @@ const renderData = async () => {
 		.append('h2')
 		.text('Top 100 Most Sold Video Games Grouped by Platform')
 		.attr('id', 'description');
+
+	// SVG
+	const w = 960;
+	const h = 600;
 
 	const svg = main
 		.append('svg')
