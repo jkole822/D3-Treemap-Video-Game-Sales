@@ -123,8 +123,8 @@ const renderData = async () => {
 			tooltip
 				.html(renderTooltip(d.data.name, d.data.value, d.data.category))
 				.attr('data-value', d.data.value)
-				.style('left', `${d3.event.pageX + 10}px`)
-				.style('top', `${d3.event.pageY - 28}px`)
+				.style('left', `${d3.event.pageX}px`)
+				.style('top', `${d3.event.pageY + 30}px`)
 				.style('background-color', colors(d.parent.data.name));
 		})
 		.on('mouseout', d => {
